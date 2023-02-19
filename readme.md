@@ -20,4 +20,5 @@ We are on the process of deployment and my browser settings had an issue because
 the index.html file is in templates
 
 We are working on the deployment of the model on github pages by configuring docker to the repository
+storymap is a repo for data story telling 
 
