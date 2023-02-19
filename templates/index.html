@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Malaria commodity prediction model</title>
+  </head>
+  <body>
+    <h1></h1>
+    <form id="input-form">
+      <label for="input-data">Input Data:</label>
+      <input type="text" id="input-data" name="input-data">
+      <button type="submit">Make Prediction</button>
+    </form>
+    <div id="prediction"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function() {
+        $('#input-form').submit(function(event) {
+          event.preventDefault();
+          var inputData = $('#input-data').val();
+          $.ajax({
+            type: 'POST',
+            url: '/make-prediction',
+            contentType: 'application/json',
+            data: JSON.stringify(inputData),
+            success: function(response) {
+              $('#prediction').text('Prediction: ' + response.prediction);
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

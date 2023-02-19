@@ -1,0 +1,17 @@
+OVERCOMING RESOURCE ALLOCATION CHALLENGES IN KENYA
+
+We used Machine Learning to make a Logistic Regression model using scikit-learn, pandas, numpy, seaborn and matplotlib to predict the future commodity trends of the demand of  malaria commodities.
+
+
+
+Getting Started
+This model has the following dependencies:
+
+NumPy
+Pandas
+Scikit-learn
+
+Acknowledgments
+
+This project was inspired by the challenge of restocking malaria commodities in health facilities across the country.
+Special thanks to the Ministry of Health for providing the data used to train this model.
